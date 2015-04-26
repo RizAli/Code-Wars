@@ -24,7 +24,22 @@ describe 'codewards' do
     it 'returns name welcome message, test case' do
       kata = Kata.new
       message = kata.say_hello(['Wallace','Russel','Osbourne'], 'Albany','New York')
-      expect(message).to eq('Hello, Franklin Delano Roosevelt! Welcome to Chicago, Illinois!')
+      expect(message).to eq('Hello, Wallace Russel Osbourne! Welcome to Albany, New York!')
+    end
+  end
+
+
+  context 'it smashes the word in a sentence' do
+    it 'returns a sentence' do
+      kata = Kata.new
+      sentence = kata.smash_words(["Hello", "world"])
+      expect(sentence).to eq("Hello world")
     end
   end
 end
+
+
+
+
+
+

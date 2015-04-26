@@ -4,4 +4,9 @@ class Kata
     name = name.join(' ')
     "Hello, #{name}! Welcome to #{city}, #{state}!"
   end
+
+  def smash_words(words)
+    words.join(" ")
+  end
 end
+
