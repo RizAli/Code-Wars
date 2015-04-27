@@ -8,5 +8,12 @@ class Kata
   def smash_words(words)
     words.join(" ")
   end
-end
 
+  def cap_me(sentence)
+    # sentence.map {|e| e.downcase.capitalize }
+    sentence.collect{ |x| x.capitalize }
+    # sentence.map &:capitalize
+    # y = []
+    # sentence.each { |x| y << x.downcase.capitalize }
+  end
+end

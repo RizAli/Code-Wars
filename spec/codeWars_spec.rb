@@ -38,6 +38,20 @@ describe 'codewards' do
   end
 end
 
+describe 'cap_me' do
+  it "should capitalize lower case names given in an array" do
+    kata = Kata.new
+    test_case = kata.cap_me(['jo', 'nelson', 'jurie'])
+    expect(test_case).to eq(['Jo', 'Nelson', 'Jurie'])
+  end
+
+  it 'Should return only the first letter capitalize' do
+    kata = Kata.new
+    test_case = kata.cap_me(['ALBERT','CHRISTINE','aDAM','mO'])
+    expect(test_case).to eq(['Albert', 'Christine', 'Adam', 'Mo'])
+  end
+
+end
 
 
 
